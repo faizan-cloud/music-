@@ -1,0 +1,90 @@
+body {
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(https://images.wallpaperscraft.com/image/musical_instrument_music_percussion_guitar_106370_1920x1080.jpg);
+  background-size: cover;
+}
+
+#container-1 {
+  justify-content: center;
+  text-align: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 83.5vh;
+  overflow: hidden;
+}
+.music {
+  margin: 30px, 0px 15px, 0;
+  color: #ffffff;
+}
+.description {
+  color: white;
+  background-color: black;
+  content: center;
+  width: fit-content;
+  margin-left: 38%;
+}
+.visual {
+  text-align: center;
+}
+
+#pads {
+  height: 120px;
+  position: bottom;
+  width: 100px;
+  display: flex;
+  flex: 1;
+  width: 100%;
+  overflow: hidden;
+}
+.pad1 {
+  background-color: #60d360;
+  flex: 1;
+}
+.pad2 {
+  background-color: #d36060;
+  flex: 1;
+}
+
+.pad3 {
+  background-color: #c060d3;
+  flex: 1;
+}
+.pad4 {
+  background-color: #d3d160;
+  flex: 1;
+}
+.pad5 {
+  background-color: #606bd3;
+  flex: 1;
+}
+.pad6 {
+  background-color: #60c2d3;
+  flex: 1;
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0%;
+    left: 20%;
+  }
+  50% {
+    bottom: 50%;
+    left: 50%;
+  }
+  100% {
+    bottom: 0%;
+    left: 80%;
+  }
+}
+.visual > div {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  bottom: 0%;
+  left: 20%;
+  z-index: -1;
+}
